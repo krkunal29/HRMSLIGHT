@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from dreamguys.co.in/smarthr/light/create-invoice.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 May 2019 05:37:35 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="description" content="Smarthr - Bootstrap Admin Template">
+		<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
+        <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Create Invoice - HRMS admin template</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="https://dreamguys.co.in/smarthr/light/assets/img/favicon.png">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://dreamguys.co.in/smarthr/light/assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="https://dreamguys.co.in/smarthr/light/assets/css/font-awesome.min.css">
+		
+		<!-- Lineawesome CSS -->
+        <link rel="stylesheet" href="https://dreamguys.co.in/smarthr/light/assets/css/line-awesome.min.css">
+		
+		<!-- Select2 CSS -->
+		<link rel="stylesheet" href="https://dreamguys.co.in/smarthr/light/assets/css/select2.min.css">
+		
+		<!-- Datetimepicker CSS -->
+		<link rel="stylesheet" href="https://dreamguys.co.in/smarthr/light/assets/css/bootstrap-datetimepicker.min.css">
+		
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="https://dreamguys.co.in/smarthr/light/assets/css/style.css">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+		<!-- Main Wrapper -->
+        <div class="main-wrapper">
+		
+			<!-- Header -->
+            <div class="header">
+			
+				<!-- Logo -->
+                <div class="header-left">
+                    <a href="https://dreamguys.co.in/smarthr/light/index.html" class="logo">
+						<img src="https://dreamguys.co.in/smarthr/light/assets/img/logo.png" width="40" height="40" alt="">
+					</a>
+                </div>
+				<!-- /Logo -->
+				
+				<a id="toggle_btn" href="javascript:void(0);">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				
+				<!-- Header Title -->
+                <div class="page-title-box">
+					<h3>Dreamguy's Technologies</h3>
+                </div>
+				<!-- /Header Title -->
+				
+				<a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa fa-bars"></i></a>
+				
+				<!-- Header Menu -->
+				<ul class="nav user-menu">
+				
+					<!-- Flag -->
+					<li class="nav-item dropdown has-arrow flag-nav">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+							<img src="https://dreamguys.co.in/smarthr/light/assets/img/flags/us.png" alt="" height="20"> English
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="https://dreamguys.co.in/smarthr/light/assets/img/flags/us.png" alt="" height="16"> English
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="https://dreamguys.co.in/smarthr/light/assets/img/flags/fr.png" alt="" height="16"> French
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="https://dreamguys.co.in/smarthr/light/assets/img/flags/es.png" alt="" height="16"> Spanish
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="https://dreamguys.co.in/smarthr/light/assets/img/flags/de.png" alt="" height="16"> German
+							</a>
+						</div>
+					</li>
+					<!-- /Flag -->
+				
+					<!-- Notifications -->
+					<li class="nav-item dropdown">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<i class="fa fa-bell-o"></i> <span class="badge badge-pill">3</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<span class="notification-title">Notifications</span>
+								<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-02.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+													<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-03.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
+													<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-06.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
+													<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-17.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
+													<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-13.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
+													<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="https://dreamguys.co.in/smarthr/light/activities.html">View all Notifications</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+					
+					<!-- Message Notifications -->
+					<li class="nav-item dropdown">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<i class="fa fa-comment-o"></i> <span class="badge badge-pill">8</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<span class="notification-title">Messages</span>
+								<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-09.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author">Richard Miles </span>
+													<span class="message-time">12:28 AM</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-02.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author">John Doe</span>
+													<span class="message-time">6 Mar</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-03.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author"> Tarah Shropshire </span>
+													<span class="message-time">5 Mar</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-05.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author">Mike Litorus</span>
+													<span class="message-time">3 Mar</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/light/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-08.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author"> Catherine Manseau </span>
+													<span class="message-time">27 Feb</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="https://dreamguys.co.in/smarthr/light/chat.html">View all Messages</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Message Notifications -->
+
+					<li class="nav-item dropdown has-arrow main-drop">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<span class="user-img"><img src="https://dreamguys.co.in/smarthr/light/assets/img/profiles/avatar-21.jpg" alt="">
+							<span class="status online"></span></span>
+							<span>Admin</span>
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/light/profile.html">My Profile</a>
+							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/light/settings.html">Settings</a>
+							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/light/login.html">Logout</a>
+						</div>
+					</li>
+				</ul>
+				<!-- /Header Menu -->
+				
+				<!-- Mobile Menu -->
+				<div class="dropdown mobile-user-menu">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/light/profile.html">My Profile</a>
+						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/light/settings.html">Settings</a>
+						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/light/login.html">Logout</a>
+					</div>
+				</div>
+				<!-- /Mobile Menu -->
+				
+            </div>
+			<!-- /Header -->
+			
+			<!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/index.html"><i class="la la-dashboard"></i> <span>Dashboard</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#" class="noti-dot"><i class="la la-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="https://dreamguys.co.in/smarthr/light/employees.html">All Employees</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/holidays.html">Holidays</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/leaves.html">Leaves (Admin) <span class="badge badge-pill bg-primary float-right">1</span></a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/leaves-employee.html">Leaves (Employee)</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/leave-settings.html">Leave Settings</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/attendance.html">Attendance (Admin)</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/attendance-employee.html">Attendance (Employee)</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/departments.html">Departments</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/designations.html">Designations</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/timesheet.html">Timesheet</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/promotion.html">Promotion</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/resignation.html">Resignation</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/termination.html">Termination</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/overtime.html">Overtime</a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/clients.html"><i class="la la-users"></i> <span>Clients</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/projects.html"><i class="la la-rocket"></i> <span>Projects</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/tasks.html"><i class="la la-tasks"></i> <span>Tasks</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-phone"></i> <span> Calls</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="https://dreamguys.co.in/smarthr/light/voice-call.html">Voice Call</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/video-call.html">Video Call</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/outgoing-call.html">Outgoing Call</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/incoming-call.html">Incoming Call</a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/contacts.html"><i class="la la-book"></i> <span>Contacts</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/leads.html"><i class="la la-user-secret"></i> <span>Leads</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-files-o"></i> <span> Accounts </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="https://dreamguys.co.in/smarthr/light/estimates.html">Estimates</a></li>
+									<li><a class="active" href="https://dreamguys.co.in/smarthr/light/invoices.html">Invoices</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/payments.html">Payments</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/expenses.html">Expenses</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/provident-fund.html">Provident Fund</a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/taxes.html">Taxes</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-money"></i> <span> Payroll </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="https://dreamguys.co.in/smarthr/light/salary.html"> Employee Salary </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/salary-view.html"> Payslip </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/payroll-items.html"> Payroll Items </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-building"></i> <span> Jobs </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="https://dreamguys.co.in/smarthr/light/jobs.html"> Manage Jobs </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/job-applicants.html"> Applied Candidates </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/tickets.html"><i class="la la-ticket"></i> <span>Tickets</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/events.html"><i class="la la-calendar"></i> <span>Events</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/inbox.html"><i class="la la-at"></i> <span>Email</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/chat.html"><i class="la la-comments"></i> <span>Chat</span> <span class="badge badge-pill bg-primary float-right">5</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/assets.html"><i class="la la-object-ungroup"></i> <span>Assets</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/policies.html"><i class="la la-file-pdf-o"></i> <span>Policies</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/activities.html"><i class="la la-bell"></i> <span>Activities</span></a>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/users.html"><i class="la la-user-plus"></i> <span>Users</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="https://dreamguys.co.in/smarthr/light/expense-reports.html"> Expense Report </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/invoice-reports.html"> Invoice Report </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/settings.html"><i class="la la-cog"></i> <span>Settings</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-columns"></i> <span> Pages </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="https://dreamguys.co.in/smarthr/light/login.html"> Login </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/register.html"> Register </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/forgot-password.html"> Forgot Password </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/otp.html"> OTP </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/lock-screen.html"> Lock Screen </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/profile.html"> Employee Profile </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/client-profile.html"> Client Profile </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/error-404.html">404 Error </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/error-500.html">500 Error </a></li>
+									<li><a href="https://dreamguys.co.in/smarthr/light/blank-page.html"> Blank Page </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="https://dreamguys.co.in/smarthr/light/components.html"><i class="la la-puzzle-piece"></i> <span>Components</span></a>
+							</li>
+							<li class="submenu">
+								<a href="javascript:void(0);"><i class="la la-share-alt"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li class="submenu">
+										<a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
+										<ul style="display: none;">
+											<li><a href="javascript:void(0);"><span>Level 2</span></a></li>
+											<li class="submenu">
+												<a href="javascript:void(0);"> <span> Level 2</span> <span class="menu-arrow"></span></a>
+												<ul style="display: none;">
+													<li><a href="javascript:void(0);">Level 3</a></li>
+													<li><a href="javascript:void(0);">Level 3</a></li>
+												</ul>
+											</li>
+											<li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0);"> <span>Level 1</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+                </div>
+            </div>
+			<!-- /Sidebar -->
+			
+			<!-- Page Wrapper -->
+            <div class="page-wrapper">
+			
+				<!-- Page Content -->
+                <div class="content container-fluid">
+				
+					<!-- Page Title -->
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="page-title">Create Invoice</h4>
+						</div>
+					</div>
+					<!-- /Page Title -->
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<form>
+								<div class="row">
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label>Client <span class="text-danger">*</span></label>
+											<select class="select">
+												<option>Please Select</option>
+												<option selected>Barry Cuda</option>
+												<option>Tressa Wexler</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label>Project <span class="text-danger">*</span></label>
+											<select class="select">
+												<option>Select Project</option>
+												<option selected>Office Management</option>
+												<option>Project Management</option>
+											</select>
+										</div>
+									</div>
+									
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label>Email</label>
+											<input class="form-control" type="email">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label>Tax</label>
+											<select class="select">
+												<option>Select Tax</option>
+												<option>VAT</option>
+												<option>GST</option>
+												<option>No Tax</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label>Client Address</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label>Billing Address</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label>Invoice date <span class="text-danger">*</span></label>
+											<div class="cal-icon">
+												<input class="form-control datetimepicker" type="text">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="form-group">
+											<label>Due Date <span class="text-danger">*</span></label>
+											<div class="cal-icon">
+												<input class="form-control datetimepicker" type="text">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-sm-12">
+										<div class="table-responsive">
+											<table class="table table-hover table-white">
+												<thead>
+													<tr>
+														<th style="width: 20px">#</th>
+														<th class="col-sm-2">Item</th>
+														<th class="col-md-6">Description</th>
+														<th style="width:100px;">Unit Cost</th>
+														<th style="width:80px;">Qty</th>
+														<th>Amount</th>
+														<th> </th>
+													</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<td>1</td>
+													<td>
+														<input class="form-control" type="text" style="min-width:150px">
+													</td>
+													<td>
+														<input class="form-control" type="text" style="min-width:150px">
+													</td>
+													<td>
+														<input class="form-control" style="width:100px" type="text">
+													</td>
+													<td>
+														<input class="form-control" style="width:80px" type="text">
+													</td>
+													<td>
+														<input class="form-control" readonly style="width:120px" type="text">
+													</td>
+													<td><a href="javascript:void(0)" class="text-success font-18" title="Add"><i class="fa fa-plus"></i></a></td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>
+														<input class="form-control" type="text" style="min-width:150px">
+													</td>
+													<td>
+														<input class="form-control" type="text" style="min-width:150px">
+													</td>
+													<td>
+														<input class="form-control" style="width:100px" type="text">
+													</td>
+													<td>
+														<input class="form-control" style="width:80px" type="text">
+													</td>
+													<td>
+														<input class="form-control" readonly style="width:120px" type="text">
+													</td>
+													<td><a href="javascript:void(0)" class="text-danger font-18" title="Remove"><i class="fa fa-trash-o"></i></a></td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="table-responsive">
+											<table class="table table-hover table-white">
+												<tbody>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td class="text-right">Total</td>
+														<td style="text-align: right; padding-right: 30px;width: 230px">0</td>
+													</tr>
+													<tr>
+														<td colspan="5" class="text-right">Tax</td>
+														<td style="text-align: right; padding-right: 30px;width: 230px">
+															<input class="form-control text-right" value="0" readonly type="text">
+														</td>
+													</tr>
+													<tr>
+														<td colspan="5" class="text-right">
+															Discount %
+														</td>
+														<td style="text-align: right; padding-right: 30px;width: 230px">
+															<input class="form-control text-right" type="text">
+														</td>
+													</tr>
+													<tr>
+														<td colspan="5" style="text-align: right; font-weight: bold">
+															Grand Total
+														</td>
+														<td style="text-align: right; padding-right: 30px; font-weight: bold; font-size: 16px;width: 230px">
+															$ 0.00
+														</td>
+													</tr>
+												</tbody>
+											</table>                               
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Other Information</label>
+													<textarea class="form-control"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="submit-section">
+									<button class="btn btn-primary submit-btn m-r-10">Save & Send</button>
+									<button class="btn btn-primary submit-btn">Save</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- /Page Content -->
+				
+			</div>
+			<!-- /Page Wrapper -->
+			
+        </div>
+		<!-- /Main Wrapper -->
+		
+		<!-- Sidebar Overlay -->
+		<div class="sidebar-overlay" data-reff=""></div>
+		
+		<!-- jQuery -->
+        <script src="https://dreamguys.co.in/smarthr/light/assets/js/jquery-3.2.1.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+        <script src="https://dreamguys.co.in/smarthr/light/assets/js/popper.min.js"></script>
+        <script src="https://dreamguys.co.in/smarthr/light/assets/js/bootstrap.min.js"></script>
+		
+		<!-- Slimscroll JS -->
+		<script src="https://dreamguys.co.in/smarthr/light/assets/js/jquery.slimscroll.min.js"></script>
+		
+		<!-- Select2 JS -->
+		<script src="https://dreamguys.co.in/smarthr/light/assets/js/select2.min.js"></script>
+		
+		<!-- Datetimepicker JS -->
+		<script src="https://dreamguys.co.in/smarthr/light/assets/js/moment.min.js"></script>
+		<script src="https://dreamguys.co.in/smarthr/light/assets/js/bootstrap-datetimepicker.min.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="https://dreamguys.co.in/smarthr/light/assets/js/app.js"></script>
+		
+    </body>
+
+<!-- Mirrored from dreamguys.co.in/smarthr/light/create-invoice.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 May 2019 05:37:35 GMT -->
+</html>
